@@ -1,13 +1,81 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Chaitanya Karamchedu Website</title>
+    <title>Chaitanya Karamchedu | Home</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./dev/stylesheet.css">
+    <!--MathJax-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./dev/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./dev/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./dev/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./dev/favicon/site.webmanifest">
 </head>
+
 <body>
-    <h1> Hello World </h1>
-    <p> I'm hosted with Github Pages. </p>
-    <div id="main">
+    <div class="leftbox"></div>
+    <div class="centerbox">
+        <div class="navigation">
+            <div class="navigationText">
+                <br>
+                <a href="./index.html" style="color:darkred">\(|\)Home\(\rangle\)</a>
+                &nbsp;
+                <div class="navigationTextDropdown">
+                    <a class="navigationResearch" href="./research/research.html">Research</a>
+                    <div class="navigationTextDropdownContent">
+                        <a style="padding-left: 10px; padding-right: 10px;" href="./research/publications.html">Publications</a>
+                    </div>
+                </div>
+                &nbsp;
+                <div class="navigationTextDropdown">
+                    <a href="./reading/reading.html">Reading</a>
+                    <div class="navigationTextDropdownContent">
+                        <a style="padding-left: 20px; padding-right: 20px;" href="./reading/academic.html">Academic</a>
+                        <a style="padding-left: 10px; padding-right: 10px;" href="./reading/general.html">General</a>
+                    </div>
+                </div>
+                <span> </span>
+            </div>
+        </div>
+
+        <div id="homeTopContainer">
+            <div id="homeTopLeftContainer">
+                <p>
+                    <h1>Chaitanya Karamchedu</h1>
+                    University of Maryland, College Park
+                    <br>
+                    Computer Science PhD Student
+                    <br><br>
+                    <b>Email:</b> cdkaram@umd.edu
+                    <br>
+                    <b>O:</b>  -
+                    <br>
+                    <br><br>
+                </p>
+            </div>
+            <div id="homeTopRightContainer">
+                <img src="./me.jpg">
+            </div>
+            <div id="clear"></div>
+        </div>
+        <div id="homeBottomContainer">
+            <p>
+                I am a PhD student in the computer science department at at <a href="https://www.cs.umd.edu/" target="_blank">UMD</a> in the <a href="https://quics.umd.edu/" target="_blank">QuICS</a> center. I am advised by <a href="https://quics.umd.edu/people/daniel-gottesman" target="_blank">Daniel Gottesman</a>, and am primarily studying quantum complexity theory. Prior to joining UMD, I worked for a year at Sandia National Labs with <a href="https://sites.google.com/site/sarovar" target="_blank">Mohan Sarovar</a>, studying quantum algorithms and quantum circuit synthesis. I did my undergraduate studies at <a href="https://www.hmc.edu/" target="_blank">Harvey Mudd College</a>, where I studied computer science and mathematics, along with a lot of physics.
+            </p>
+            <p>
+                My research interests lie at somewhere in the union of computer science, pure mathematics, and quantum foundations. To my mind, quantum computing represents a lovely area of study that naturally synthezises many of these topics under a single, enchanting, umbrella. Beyond quantum computing, I also maintain broader research interests in pure mathematics and physics; you can find more detailed information on my research interests, as well as a few problems I am thinking about at the moment, <a href="./research/research.html">here</a>.
+            </p>
+
+            <p>
+                Furthermore, I like to maintain a list of my current reading, both specifically academic and general. I mainly just document papers or books that I have read that have stood out to me as of interest for one reason or another (sometimes I'll include a small blurb desribing a listed item's interest to me). Please feel free to check them out <a href="./reading/reading.html">here</a>!
+            </p>
+        
+        </div>
     </div>
+    <div class="rightbox"></div>
+
 </body>
+
 </html>
