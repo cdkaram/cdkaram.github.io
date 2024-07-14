@@ -146,16 +146,16 @@ body {
     
     .centerbox {
         position:relative;
-        margin-left: -410px; 
+        margin-left: -460px; 
         left: 50%;
         /* max-width: 1020px; */
-        max-width: 820px;
+        max-width: 920px;
     }
   
     .centerboxNavigation {
-      margin-left: -410px; 
+      margin-left: -460px; 
       left: 50%;
-      max-width: 820px;
+      max-width: 920px;
   }
     
     .rightbox {
