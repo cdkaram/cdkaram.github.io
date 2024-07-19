@@ -1,7 +1,9 @@
 body { 
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20); 
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
     font-weight: lighter;
     color: rgb(237, 235, 235);
     text-decoration: none;
@@ -23,11 +25,12 @@ body {
   
   a {
     text-decoration: none;
-    color: rgb(100, 100, 100);
+    /*color: rgb(100, 100, 100);*/
+    color: rgb(137, 137, 137);
   }
   
   a:hover {
-    color: darkred;
+    color: red;
     
   }
   
