@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chaitanya Karamchedu | Publications</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../dev/stylesheet.css">
+    <!--MathJax-->
+    <script>
+        window.MathJax = {
+          tex: {
+            inlineMath: [["\\(", "\\)"], ["\\[", "\\]"]],
+            displayMath: [["\\{", "\\}"]],
+        },
+    };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!--My Scripts-->
+    <script src="../../dev/scripts.js"></script>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../dev/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../dev/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../dev/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../dev/favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="leftbox"></div>
+    <div id="navBar" class="centerboxNavigation">
+        <div class="navigation">
+            <div class="navigationText">
+                <br>
+                <a href="../index.html">Home</a>
+                &nbsp;
+                <div class="navigationTextDropdown">
+                    <a href="../research/research.html" style="color:darkred">\(|\)Research\(\rangle\)</a>
+                    <div class="navigationTextDropdownContent">
+                        <a style="padding-left: 10px; padding-right: 10px; color:darkred;" href="../research/publications.html">Publications</a>
+                    </div>
+                </div>
+                &nbsp;
+                <div class="navigationTextDropdown">
+                    <a href="../reading/reading.html">Reading</a>
+                    <div class="navigationTextDropdownContent">
+                        <a style="padding-left: 20px; padding-right: 20px;" href="../reading/academic.html">Academic</a>
+                        <a style="padding-left: 10px; padding-right: 10px;" href="../reading/general.html">General</a>
+                    </div>
+                </div>
+                <span> </span>
+            </div>
+        </div>
+    </div>
+    <div class="rightbox"></div>
+    
+    <div class="leftbox"></div>
+    <div class="centerbox">
+        <div class="rptContainer">
+            <h3><center><u>Analytic Interpolation of Arithmetic Functions</u></center></h3>
+
+            <p>
+                In 1918, Srinivasa Ramanujan introduced the exponential sums given by \{c_q(n) = \sum_{k \in (\mathbb{Z} / q\mathbb{Z})^\times} e^{2\pi i k n / q}.\} These sums, which have come to be known as <em>Ramanujan sums</em> have several remarkable properties, including that they are integer valued on integer inputs, and that they are multiplicative in the index \( q \). However, one property
+                of particular interest to me is that several important arithmetic functions can expressed very cleanly as a linear combination of Ramanujan sums.
+            
+            <br>
+                <br>
+                For example, given a positive integer \(n\), let \{\sigma_k(n) = \sum_{d \mid n} d^k\} be the sum of the \( k \)th-power of the divisors \(d\) of \(n\). The divisor functions have a beautiful expansion in terms of Ramanujan sums:
+
+                \{\sigma_k(n) = n^k\zeta(k + 1) \sum_{q \geq 1} \frac{c_q(n)}{q^{k + 1}}.\} Note though, that the form of the right hand side expression above suggests an interesting possibility: there is no particular necessity that \( n \) be an integer. While it is not at all obvious what it would mean to compute the "sum of the divisors of \( \pi \)," using the Ramanujan expansion you could sensibly assign a value of the function at \( \pi \). More precisely,
+                the Ramanujan expansion of \( \sigma_k(n) \) can be extended to an function that analytically interpolates  \( \sigma_k(n) \) to the whole real line (and in fact to the upper-half of the complex plane). Showing that this works requires a bit more thought, for example it needs to be verified that the Ramanujan expansion actually converges at non-integer values; I explored some related questions with my friend and colleague Matthew fox <a href="https://arxiv.org/abs/2010.10689" target="_blank">here</a>.
+                
+            <br>
+            <br>
+                In general though, the possibility of using Ramanujan expansions of arithmetic functions to systematically realize analytic analgoues of those functions presents a tantalizing possibility for imposing analytic structure on otherwise highly discrete mathematical objects. Conisder, for example, the miryad open questions surrounding the perfect numbers. Recall that an integer \(n\) is said to be <i>perfect</i>
+                if and only if \(\sigma_1(n) = 2n\). The first four perfect numbers are 6, 28, 496, and 8128 (<a href="https://oeis.org/A000396" target="_blank">sequence A000396 in OEIS</a>
+                ). The perfect numbers are the subject of many fascinating open questions; the most famous of these was presented by Euclid, who conjectured that all perfect numbers are even.
+
+            <br>
+                <br>While we don't expect to resolve the open questions surrounding the perfect numbers, it appears nonetheless to us to be interesting avenue of research to use Ramanujan expansions like this to try to interrogate their structure. More broadly, our hope is that Ramanujan expansions of arithmetic functions can be worked into a useful mediator, through which the tools of complex analysis might be brought to bear in order to gain a better understanding of the structure of certain arithmetic functions, which might be challenging to engage with otherwise. We have also spent time exploring applications of Ramanujan interpolations (as we have dubbed them) towards making progress on <a href="https://en.wikipedia.org/wiki/Ramanujan_tau_function#Conjectures_on_%CF%84(n)" target="_blank">Lehmer's conjecture on Ramanujan's Tau function</a>, and other related open problems (for example, understanding when \( \tau(n) > 0 \)). We have a fair bit of unpublished work on this topic, which we hope to complete and publish soon.
+
+            </p>
+
+        </div>
+    </div>
+    <div class="rightbox"></div>
+
+</body>
+
+</html>

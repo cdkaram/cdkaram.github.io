@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chaitanya Karamchedu | Publications</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../dev/stylesheet.css">
+    <!--MathJax-->
+    <script>
+        window.MathJax = {
+          tex: {
+            inlineMath: [["\\(", "\\)"], ["\\[", "\\]"]],
+            displayMath: [["\\{", "\\}"]],
+        },
+    };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!--My Scripts-->
+    <script src="../../dev/scripts.js"></script>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../dev/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../dev/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../dev/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../dev/favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="leftbox"></div>
+    <div id="navBar" class="centerboxNavigation">
+        <div class="navigation">
+            <div class="navigationText">
+                <br>
+                <a href="../index.html">Home</a>
+                &nbsp;
+                <div class="navigationTextDropdown">
+                    <a href="../research/research.html" style="color:darkred">\(|\)Research\(\rangle\)</a>
+                    <div class="navigationTextDropdownContent">
+                        <a style="padding-left: 10px; padding-right: 10px; color:darkred;" href="../research/publications.html">Publications</a>
+                    </div>
+                </div>
+                &nbsp;
+                <div class="navigationTextDropdown">
+                    <a href="../reading/reading.html">Reading</a>
+                    <div class="navigationTextDropdownContent">
+                        <a style="padding-left: 20px; padding-right: 20px;" href="../reading/academic.html">Academic</a>
+                        <a style="padding-left: 10px; padding-right: 10px;" href="../reading/general.html">General</a>
+                    </div>
+                </div>
+                <span> </span>
+            </div>
+        </div>
+    </div>
+    <div class="rightbox"></div>
+    
+    <div class="leftbox"></div>
+    <div class="centerbox">
+        <div class="rptContainer">
+            <h3><center><u>Ramsey Theory</u></center></h3>
+
+            <p>
+                Ramsey theory is a branch of mathematics that studies the "forced" emergence of particular kinds of structures. At a high level, I rather like the
+                informal description of Ramsey theory given by <a href="https://bookstore.ams.org/stml-73" target="_blank">Landman and Robertson</a>:
+
+                <blockquote>
+                Ramsey theory is the study of the preservation of properties under set partitions. In other words, given a particular set \( S \) that has a property
+                \( P \), is it true that whenever \( S \) is paritioned into finitely many subsets, one of the subsets must also have property \( P \)?
+                </blockquote>
+
+                There are lots of different problems that are Ramsey theoretic in flavor concerning a remarkable plethora of mathematical structures. One of the most fundamental though is in graph theory; here Ramsey-type problems often manifest in questions about edge colorings. For example, a standard "party problem" question asks
+                how many people must be at a party in order to be certain that there must always exist a group of 4 people who are all mutual friends or all mutual strangers (assuming that any two people are either friends or strangers)? This question can be stated more formally in terms of colorings on graphs, asking what is the minimal 
+                \( r \) such that any \(2\)-coloring of a \( K_r \) admits a monochromatic \( K_4 \) as a subgraph? Here the value of \( r \) is one of the "diagonal" Ramsey numbers. While the answer to this question is known, in general, the Ramsey numbers are incredibly difficult to compute: for example, the value of the next diagonal Ramsey number, 
+                asking for the minimal value of \( r \) such that any \(2\)-coloring of a \( K_r \) admits a monochromatic \( K_5 \) as a subgraph is unknown (but it is known that \( 43 \leq r \leq 48 \)).
+                <br>
+                <br>
+                Now, the question(s) above are asking for the emergence of <em>complete</em> subgraphs. However, we can more generally investigate the Ramsey numbers of any particular kind of subgraph. In fact, the Ramsey numbers of many simple families of graphs (including stars, paths, and cycles) have been determined exactly: see <a href="https://www.cs.rit.edu/~spr/ElJC/ejcram17.pdf" target="_blank">Radzisowski</a> for a survey of known results of Ramsey numbers.
+                One of the questions I am most interested in is the study of the Ramsey numbers of a family of graphs known as <em>double stars</em>. A double star (denoted \( S(n,m) \)) is a particular kind of tree on \( n + m + 2 \) nodes, formed by taking two disjoint stars (of size \( n \) and \( m \) respectively) and adding an edge joining their centers; the Ramsey numbers of the double stars were solved in most cases by <a href="https://www.sciencedirect.com/science/article/pii/0012365X79901328" target="_blank">Grossman et al.</a> In particular, they show that for all \( n \leq \sqrt{2} m \) and \( n \geq 3m \), the Ramsey numbers of the double stars satisfy
+
+                \{ r(S(n,m)) = \left[ \begin{array}{lr}
+                \text{max}(n + 2m + 1, 2n + 2), & \text{for } n \text{ odd}, m \leq 2\\
+                \text{max}(n + 2m + 2, 2n + 2), & \text{otherwise}
+                \end{array} \right]. \}
+
+                It was conjectured in <a href="https://www.sciencedirect.com/science/article/pii/0012365X79901328" target="_blank">Grossman et al.</a> that the above result holds in the range \( \sqrt{2}m < n < 3m \) as well. Surprisingly however, <a href="https://arxiv.org/abs/1605.03612" target="_blank">Norin et al.</a> showed that the conjecture is false, as well as providing asymptotic results for the ramsey numbers of \( S(n,m) \) in the gap. The exact value of \( r(S(n,m)) \) in the range \( \sqrt{2}m < n < 3m \), however, remains an open question that I am very interested in resolving, and for which I possess some partial results.
+                <br>
+                <br>
+            </p>
+        </div>
+    </div>
+    <div class="rightbox"></div>
+
+</body>
+
+</html>

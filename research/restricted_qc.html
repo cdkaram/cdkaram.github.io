@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chaitanya Karamchedu | Publications</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../dev/stylesheet.css">
+    <!--MathJax-->
+    <script>
+        window.MathJax = {
+          tex: {
+            inlineMath: [["\\(", "\\)"], ["\\[", "\\]"]],
+            displayMath: [["\\{", "\\}"]],
+        },
+    };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!--My Scripts-->
+    <script src="../../dev/scripts.js"></script>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../dev/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../dev/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../dev/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../dev/favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="leftbox"></div>
+    <div id="navBar" class="centerboxNavigation">
+        <div class="navigation">
+            <div class="navigationText">
+                <br>
+                <a href="../index.html">Home</a>
+                &nbsp;
+                <div class="navigationTextDropdown">
+                    <a href="../research/research.html" style="color:darkred">\(|\)Research\(\rangle\)</a>
+                    <div class="navigationTextDropdownContent">
+                        <a style="padding-left: 10px; padding-right: 10px; color:darkred;" href="../research/publications.html">Publications</a>
+                    </div>
+                </div>
+                &nbsp;
+                <div class="navigationTextDropdown">
+                    <a href="../reading/reading.html">Reading</a>
+                    <div class="navigationTextDropdownContent">
+                        <a style="padding-left: 20px; padding-right: 20px;" href="../reading/academic.html">Academic</a>
+                        <a style="padding-left: 10px; padding-right: 10px;" href="../reading/general.html">General</a>
+                    </div>
+                </div>
+                <span> </span>
+            </div>
+        </div>
+    </div>
+    <div class="rightbox"></div>
+    
+    <div class="leftbox"></div>
+    <div class="centerbox">
+        <div class="rptContainer">
+            <h3><center><u>Restricted Models of Quantum Computing</u></center></h3>
+
+            <p>
+                It is generally suspected that quantum computers can outperform classical computers for certain computational tasks. This belief is perhaps most significantly encapsulated by the mathematical conjecture that \( \mathsf{BPP} \subsetneq \mathsf{BQP} \), where, roughly, \( \mathsf{BPP} \) is the set of computational tasks solvable in polynomial time with classical computers (with bounded error), and \( \mathsf{BQP} \) is the same set but with quantum computers. 
+                Like the notorious \( \mathsf{P} \neq \mathsf{NP} \) conjecture, the \( \mathsf{BPP} \neq \mathsf{BQP} \) conjecture has stubbornly evaded all formal attempts of proof for decades. Thus, despite the corpus of evidence in favor of \( \mathsf{BPP} \neq \mathsf{BQP} \), there is at present no concrete proof of this claim.
+                <br>
+                <br>
+                Given this resistance, there is an interest in the study of restricted computational models. These models of computation are designed to be restricted in a manner that they are certainly not universal for quantum computation, 
+                and yet there exist very strong complexity theoretic arguments to suggest that these models are also not tractable by classical computation; i.e., these models cannot generally be efficiently simulated by a classical machine. 
+                Interesting examples of these restricted models include conjugated Clifford circuits (<a href="https://arxiv.org/abs/1709.01805" target="_blank">Bouland et al.</a>), commuting quantum circuits (<a href="https://arxiv.org/abs/1005.1407" target="_blank">Bremner et al.</a>), and constant-depth quantum circuits (<a href="https://arxiv.org/abs/quant-ph/0205133" target="_blank">Terhal et al.</a>).
+                
+                <br>
+                <br>
+
+                While several such restricted models of quantum computation have been developed, relatively little is known about how these various models <em>relate to each other</em>.  
+                One of my main research interests is to develop the understanding of known restricted models, studying the hardness of some of their generalizations, and understanding how they might compare to each other. 
+                For example, along with my friend and collaborator <a href="https://matthewfoxphysics.com/" target="_blank">Matthew Fox</a>, I have been especially interested in studying various kinds of "perturbed" Clifford circuits,
+                which include conjugated Clifford circuits as a special case, and understanding their complexity. Additionally, we are also very interested in exploring the complexity of constant-depth quantum circuits, and more generally, parallelizable quantum circuits. There are several very tantalizing questions that manifest in the regime of such restricted models as constant-depth quantum circuits; for instance, one simple question is to ask whether the class of problems solvable on constant-depth quantum circuits (denoted \( \mathsf{QNC}^0 \) ) is robust to changes in the underlying universal gateset? 
+                Note, it is not at all clear that it should be, and in fact optimal circuit compilation algorithms suggest that it might not be, since these require at least logarithmic depth.
+
+            </p>
+
+        </div>
+    </div>
+    <div class="rightbox"></div>
+
+</body>
+
+</html>

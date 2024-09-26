@@ -53,7 +53,7 @@
         <div class="leftbox"></div>
         <div class="centerbox">
             <div class="rptContainer">
-                <h2>Research Interests</h2>
+                <h2><center>Research Interests</center></h2>
 
                 <p>
                 My primary research focus at the moment is in quantum complexity theory. In general, I am presently interested in persuing research that explores the nature of the "landscape" between quantum and classical computation, by way of the algebraic structures manifested by quantum computation in various kinds of computational models.
@@ -72,7 +72,11 @@
 
                 <h3>Emergence of Universality for Quantum Computing</h3>
                 <p>
-                    At a high level, this question can be phrased quite simply: which sets of gates are universal for quantum computation?
+                    In order for a quantum gate set to be meaningfully universal for computational tasks, it needn't be able to approximate any unitary to arbitrary precision. Rather it suffices for the gate set to <em> simulate </em> any unitary to 
+                    within arbitrary statistical distance. What then, determines whether or not a given quantum gate set is universal for computational tasks?  More precisely, how might the emergence of computational universality in quantum gatesets be mathematically characterized? <a href="./emergence_of_universality.html">See more...</a>
+
+
+                    <!--
                     <br>
                     <br>
                     In quantum computation, there are many notions of universality that we can adopt. One of the most standard and useful definitions is what we may call "approximate universality", wherein a set of quantum gates \( \mathcal{G} \) is said to be universal if for any unitary \( U \) and error \( \epsilon \), there exists a circuit
@@ -86,6 +90,8 @@
                     <br>
                     <br>
                     We naturally ask then, which sets of gates are <em> computationally </em> universal for quantum computing? And more precisely, how might the emergence of computational universality in quantum gatesets be mathematically characterized?
+                    -->
+                    
                     </p>
 
                 <hr size = "4px" color = "white">
@@ -93,6 +99,9 @@
                 <h3>Restricted Models of Quantum Computing</h3>
 
                 <p>
+                    There are several "weak" models of quantum computation that have been defined, which are certainly not universal for quantum computation, but for which it is nonetheless unlikely for there the be a classical algorithm which can efficiently simulate these models.
+                    How weak can these models get? How might these different restricted models relate to each other? What can these restricted models of quantum computation tell us about what the purported "landscape" between classical and quantum computation? <a href="./restricted_qc.html">See more...</a>
+                    <!--
                     It is generally suspected that quantum computers can outperform classical computers for certain computational tasks. This belief is perhaps most significantly encapsulated by the mathematical conjecture that \( \mathsf{BPP} \subsetneq \mathsf{BQP} \), where, roughly, \( \mathsf{BPP} \) is the set of computational tasks solvable in polynomial time with classical computers (with bounded error), and \( \mathsf{BQP} \) is the same set but with quantum computers. 
                     Like the notorious \( \mathsf{P} \neq \mathsf{NP} \) conjecture, the \( \mathsf{BPP} \neq \mathsf{BQP} \) conjecture has stubbornly evaded all formal attempts of proof for decades. Thus, despite the corpus of evidence in favor of \( \mathsf{BPP} \neq \mathsf{BQP} \), there is at present no concrete proof of this claim.
                     <br>
@@ -109,13 +118,15 @@
                     For example, along with my friend and collaborator <a href="https://matthewfoxphysics.com/" target="_blank">Matthew Fox</a>, I have been especially interested in studying various kinds of "perturbed" Clifford circuits,
                     which include conjugated Clifford circuits as a special case, and understanding their complexity. Additionally, we are also very interested in exploring the complexity of constant-depth quantum circuits, and more generally, parallelizable quantum circuits. There are several very tantalizing questions that manifest in the regime of such restricted models as constant-depth quantum circuits; for instance, one simple question is to ask whether the class of problems solvable on constant-depth quantum circuits (denoted \( \mathsf{QNC}^0 \) ) is robust to changes in the underlying universal gateset? 
                     Note, it is not at all clear that it should be, and in fact optimal circuit compilation algorithms suggest that it might not be, since these require at least logarithmic depth.
-
+                    -->
                 </p>
 
                 <hr size = "4px" color = "white">
             
                 <h3>Ramsey Theory </h3>
                 <p>
+                Can we make progress towards determining the Ramsey numbers of double star graphs, and their generalizations? <a href="./ramsey_theory.html">See more...</a>
+                <!--
                 Ramsey theory is a branch of mathematics that studies the "forced" emergence of particular kinds of structures. At a high level, I rather like the
                 informal description of Ramsey theory given by <a href="https://bookstore.ams.org/stml-73" target="_blank">Landman and Robertson</a>:
 
@@ -139,12 +150,15 @@
                 \end{array} \right]. \}
 
                 It was conjectured in <a href="https://www.sciencedirect.com/science/article/pii/0012365X79901328" target="_blank">Grossman et al.</a> that the above result holds in the range \( \sqrt{2}m < n < 3m \) as well. Surprisingly however, <a href="https://arxiv.org/abs/1605.03612" target="_blank">Norin et al.</a> that the conjecture is false, as well as providing asymptotic results for the ramsey numbers of \( S(n,m) \) in the gap. The exact value of \( r(S(n,m)) \) in the range \( \sqrt{2}m < n < 3m \), however, remains an open question that I am very interested in resolving.
-
+                -->    
+                </p>
 
                 <hr size = "4px" color = "white">
                 
                 <h3>Analytic Interpolations of Arithmetic Functions</h3> 
+                Using Ramanujan sums, what kinds of well definied analytic interpolations of interesting arithmetic functions can be built? Using these analytic/complex interpolations, can we prove any interesting/useful properties about the underlying arithmetic functions. For example, might we be able to make progress towards determining where the Ramanujan Tau function, \( \tau(n) \), is positive/negative? Or might we be able to explore the behavior/distribution of perfect numbers? <a href="./analytic_interpolation.html">See more...</a>
                 <p>
+                    <!--
                     In 1918, Srinivasa Ramanujan introduced the exponential sums given by \{c_q(n) = \sum_{k \in (\mathbb{Z} / q\mathbb{Z})^\times} e^{2\pi i k n / q}.\} These sums, which have come to be known as <em>Ramanujan sums</em> have several remarkable properties, including that they are integer valued on integer inputs, and that they are multiplicative in the index \( q \). However, one property
                     of particular interest to me is that several important arithmetic functions can expressed very cleanly as a linear combination of Ramanujan sums.
                 
@@ -163,7 +177,7 @@
 
                 <br>
                     <br>While we don't expect to resolve the open questions surrounding the perfect numbers, it appears nonetheless to us to be interesting avenue of research to use Ramanujan expansions like this to try to interrogate their structure. More broadly, our hope is that Ramanujan expansions of arithmetic functions can be worked into a useful mediator, through which the tools of complex analysis might be brought to bear in order to gain a better understanding of the structure of certain arithmetic functions, which might be challenging to engage with otherwise. We have also spent time exploring applications of Ramanujan interpolations (as we have dubbed them) towards making progress on <a href="https://en.wikipedia.org/wiki/Ramanujan_tau_function#Conjectures_on_%CF%84(n)" target="_blank">Lehmer's conjecture on Ramanujan's Tau function</a>, and other related open problems (for example, understanding when \( \tau(n) > 0 \)). We have a fair bit of unpublished work on this topic, which we hope to complete and publish soon.
-
+                -->  
                 </p>
 
                 <hr size = "4px" color = "white">
